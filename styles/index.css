@@ -1,0 +1,54 @@
+@import "./base.css";
+
+.home .main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.home .menu path {
+  fill: var(--color-text-primary);
+}
+
+.button-container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.button:not(button:last-of-type) {
+  margin-inline-end: 20px;
+}
+
+.close g path {
+  fill: var(--color-text-primary);
+}
+
+@media (width < 1200px) {
+  .home .main__heading {
+    font-size: 78px;
+  }
+  .button {
+    font-size: 24px;
+    padding: 0 32px;
+    height: 70px;
+  }
+}
+
+@media (width < 826px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
+  .home .main__sub-heading {
+    font-size: 20px;
+  }
+  .main {
+    padding: 70px;
+  }
+  .button-container {
+    margin-top: 32px;
+  }
+}
